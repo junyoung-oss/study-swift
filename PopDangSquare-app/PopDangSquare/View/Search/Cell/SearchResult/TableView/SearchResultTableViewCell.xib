@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultTableViewCell" rowHeight="160" id="KGk-i7-Jjw" customClass="SearchResultTableViewCell" customModule="PopDangSquare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U7k-f4-zaW">
+                        <rect key="frame" x="16" y="8" width="288" height="144"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lz-Qq-ptn">
+                        <rect key="frame" x="205" y="101" width="83" height="35"/>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.10980392160000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="예매하기"/>
+                        <connections>
+                            <action selector="bookButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XZR-05-qbK"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="U7k-f4-zaW" secondAttribute="bottom" constant="8" id="At2-uu-wkT"/>
+                    <constraint firstAttribute="trailing" secondItem="U7k-f4-zaW" secondAttribute="trailing" constant="16" id="SJS-qo-OPB"/>
+                    <constraint firstAttribute="bottom" secondItem="1Lz-Qq-ptn" secondAttribute="bottom" constant="24" id="cD7-cs-Ci1"/>
+                    <constraint firstItem="U7k-f4-zaW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="fE4-FU-CS4"/>
+                    <constraint firstAttribute="trailing" secondItem="1Lz-Qq-ptn" secondAttribute="trailing" constant="32" id="oTD-xV-FcE"/>
+                    <constraint firstItem="U7k-f4-zaW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="q0j-Nh-k1d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookButton" destination="1Lz-Qq-ptn" id="koE-44-rdM"/>
+                <outlet property="posterImage" destination="U7k-f4-zaW" id="xcO-OL-s78"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="49.295774647887328"/>
+        </tableViewCell>
+    </objects>
+</document>
